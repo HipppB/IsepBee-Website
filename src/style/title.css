@@ -1,0 +1,23 @@
+.title{
+    background-color: #0D0D2B;
+}
+
+table{
+    border-collapse:separate;
+    border-spacing: 8em 0;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+}
+
+.textBig{
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 15px;;
+}
+
+.textSmall{
+    color: white;
+    font-size: 17px;
+}
