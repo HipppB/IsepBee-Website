@@ -3,6 +3,7 @@ import "./App.css";
 import HeaderTest from "./components/header.js";
 import Title from "./components/title.js";
 import Roadmap from "./components/roadmap.js";
+import Footer from "./components/footer.js";
 
 function App() {
   return (
@@ -10,15 +11,8 @@ function App() {
       <HeaderTest />
       <Title/>
       <Roadmap/>
-
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Prochainement...
-        
-        </p>
-
-      </header>
-      
+      <Footer />
+      <br/>
     </div>
   );
 }

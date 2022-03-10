@@ -1,20 +1,25 @@
 .title{
-    background-color: #0D0D2B;
+    display: flex;
+    flex-direction: row;
+  
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: 10%;
 }
 
-table{
-    border-collapse:separate;
-    border-spacing: 8em 0;
-    overflow: hidden;
-    width: 100%;
-    justify-content: center;
+.titleContainer{
+  justify-content: space-between;
+  flex-basis: 100px;
+  min-width: 500px;
+  overflow-wrap: break-word;
 }
 
 .textBig{
     color: white;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: bold;
-    line-height: 15px;;
+    line-height: 1em;
+    width: 380px;
 }
 
 .textSmall{
