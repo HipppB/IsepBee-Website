@@ -4,6 +4,7 @@ import HeaderTest from "./components/header.js";
 import Title from "./components/title.js";
 import Roadmap from "./components/roadmap.js";
 import Footer from "./components/footer.js";
+import NewsLetter from "./components/newsletter.js";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <HeaderTest />
       <Title/>
       <Roadmap/>
+      <NewsLetter/>
       <Footer />
       <br/>
     </div>

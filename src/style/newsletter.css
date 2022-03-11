@@ -1,0 +1,55 @@
+.newsLetterContainer{
+    background: rgb(43,7,110);
+    background: linear-gradient(180deg, rgba(43,7,110,1) 0%, rgba(13,13,43,1) 95%);
+    height: 392px;
+}
+
+.NewsDivContainer{
+    border-radius: 16px; 
+    background-color: #3671E9;
+    min-height: 216px;
+    max-height: 500px;
+    display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+  margin-inline: 7%;
+}
+
+.NewsComponentsContainer {
+    width: 90%;
+    min-width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.newsTitle {
+    color: white;
+    font-size: 35px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.newsText {
+    color: white;
+}
+
+.inputNews{
+    border-width: 0px;
+    border-bottom: 2px solid white;
+    background: rgba(0,0,0,0);
+    outline: rgba(0,0,0,0);
+    width: 374px;
+    min-width: 150px;
+}
+
+.inputNews::placeholder{
+    color: white;
+}
+
+.buttonNews{
+    float: right;
+    width: 133px;
+    height: 55px;
+}
