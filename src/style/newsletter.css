@@ -1,7 +1,10 @@
 .newsLetterContainer{
     background: rgb(43,7,110);
-    background: linear-gradient(180deg, rgba(43,7,110,1) 0%, rgba(13,13,43,1) 95%);
+    background: linear-gradient(180deg, rgba(43,7,110,1) 0%, rgba(13,13,43,1) 90%);
     height: 392px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .NewsDivContainer{
@@ -22,6 +25,7 @@
     min-width: 400px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .newsTitle {
@@ -42,6 +46,7 @@
     outline: rgba(0,0,0,0);
     width: 374px;
     min-width: 150px;
+    font-size: 20px;
 }
 
 .inputNews::placeholder{
@@ -49,7 +54,6 @@
 }
 
 .buttonNews{
-    float: right;
     width: 133px;
     height: 55px;
 }

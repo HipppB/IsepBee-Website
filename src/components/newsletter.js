@@ -6,7 +6,10 @@ import "../style/newsletter.css";
 
 let props = {
     text: "Confirm",
-    color: "white"
+    color: "white",
+    w: "133px",
+    h: "55px",
+    radius:"32px",
 }
 
 function Newletter() {
