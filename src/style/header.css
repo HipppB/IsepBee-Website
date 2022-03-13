@@ -15,14 +15,27 @@
 }
 .linkContainer a {
   text-decoration: none;
-<<<<<<< HEAD
   color: white;
-=======
->>>>>>> 8184563e939b77234c5240dff0396418c5b1f9e8
+
 }
 
 .logo_image {
   margin-right: 30px;
   border: 1px solid white;
   border-radius: 90px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo_image {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

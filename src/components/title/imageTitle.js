@@ -2,8 +2,8 @@
 
 const SVGComponent = (props) => (
   <svg
-    width={610}
-    height={588}
+    width={"40vw"}
+    height={"40vw"}
     viewBox="0 0 610 588"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"

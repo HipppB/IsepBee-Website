@@ -44,9 +44,9 @@
     border-bottom: 2px solid white;
     background: rgba(0,0,0,0);
     outline: rgba(0,0,0,0);
-    width: 374px;
-    min-width: 150px;
+    width: 20vw;
     font-size: 20px;
+    color: white;
 }
 
 .inputNews::placeholder{
@@ -54,6 +54,6 @@
 }
 
 .buttonNews{
-    width: 133px;
-    height: 55px;
+    width: 10vw;
+    height: 5vw;
 }

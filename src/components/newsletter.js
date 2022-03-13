@@ -7,8 +7,8 @@ import "../style/newsletter.css";
 let props = {
     text: "Confirm",
     color: "white",
-    w: "133px",
-    h: "55px",
+    w: "10vw",
+    h: "5vw",
     radius:"32px",
 }
 

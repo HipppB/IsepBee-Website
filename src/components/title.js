@@ -9,7 +9,7 @@ function title() {
                 <TitleText/>
             </div>
             <div className="textcontainer">
-                <ImageTitle/>
+                <ImageTitle />
             </div>
         </div>
     );
