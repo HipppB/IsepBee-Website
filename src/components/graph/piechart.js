@@ -5,31 +5,34 @@ import "../../style/wallet.css";
 
 const piechart = () => {
   return (
-    <div
-      className="pie"
-      style={{ backgroundColor: "red", display: "flex", flexDirection: "row" }}
-    >
-      <div style={{ backgroundColor: "green" }}>
+    <div className="pie" style={{ display: "flex", flexDirection: "row" }}>
+      <div>
         <VictoryPie
-          colorScale={["tomato", "orange", "gold"]}
+          colorScale={["tomato", "orange", "gold", "blue"]}
           data={[
             { x: " ", y: 50 },
             { x: " ", y: 50 },
             { x: " ", y: 100 },
+            { x: " ", y: 100 },
           ]}
         />
       </div>
-      <div style={{ backgroundColor: "yellow" }}>
+      <div>
         <VictoryLegend
-          // x={350}
-          y={-15}
-          title="Legend"
+          x={100}
+          y={50}
+          title=""
           centerTitle
-          orientation="vertical"
-          gutter={20}
-          colorScale={["tomato", "orange", "gold"]}
-          style={{ border: { stroke: "black" }, title: { fontSize: 20 } }}
-          data={[{ name: "Tomato" }, { name: "orange" }, { name: "gold" }]}
+          orientatin="vertical"
+          rowGutter={25}
+          colorScale={["tomato", "orange", "gold", "blue"]}
+          style={{ title: { fontSize: 20 } }}
+          data={[
+            { name: "BTC" },
+            { name: "BNB" },
+            { name: "Dogecoin" },
+            { name: "ETH" },
+          ]}
         />
       </div>
     </div>

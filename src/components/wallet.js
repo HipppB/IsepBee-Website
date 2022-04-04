@@ -3,9 +3,12 @@ import Estimation from "./wallets/estimation.js";
 import "../style/wallet.css";
 const wallet = () => {
   return (
-    <div className="wallet">
-      <Estimation />
-      <Piechart />
+    <div className="walletcontainer">
+      <p className="walletTitle">Our Wallet</p>
+      <div className="wallet">
+        <Estimation />
+        <Piechart />
+      </div>
     </div>
   );
 };
