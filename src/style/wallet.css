@@ -4,6 +4,14 @@
   display: flex;
   flex-direction: row;
 }
+
+.pie2 {
+  height: 300px;
+  margin-right: 700px;
+  display: flex;
+  flex-direction: row;
+}
+
 .walletcontainer {
   background: #2b076e;
 }
@@ -32,4 +40,19 @@
   font-size: 16px;
   line-height: 28px;
   padding-left: 200px;
+}
+
+.statsetText {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 28px;
+  margin-left: 900px;
+  margin-top: 300px;
+}
+.statsTitle {
+  text-align: justify;
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: bold;
+  margin-left: 900px;
 }
