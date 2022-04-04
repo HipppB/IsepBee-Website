@@ -7,6 +7,7 @@ import {
   strockWidth,
   strokeLinecap,
   parent,
+  Border,
 } from "victory";
 
 const graphique = () => {
@@ -20,7 +21,7 @@ const graphique = () => {
               stroke: "#c43a31",
               strokeWidth: 15,
               strokeLinecap: "round",
-              parent: { border: "2px solid #ccc" },
+              borderBlockColor: "blue",
             },
           }}
           data={[
