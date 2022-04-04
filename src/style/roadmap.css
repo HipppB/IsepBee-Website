@@ -110,6 +110,7 @@ div.timeline-line:after {
   }
   p {
     opacity: 100%;
+    text-align: center;
   }
   li p {
     transform: translateY(-10px);
@@ -165,25 +166,5 @@ div.timeline-line:after {
     border-bottom: 15px solid transparent;
 
     border-left: 15px solid white;
-  }
-  .timeline1 {
-    margin-left: 7.14%;
-    margin-right: 7.14%;
-  }
-  .timeline2 {
-    margin-left: 22.14%;
-    margin-right: 4.14%;
-  }
-  @media screen and (max-width: 1000px) {
-    .timeline2 {
-      margin-left: 13.14%;
-      margin-right: 4.14%;
-    }
-  }
-  @media screen and (max-width: 1250px) {
-    .timeline2 {
-      margin-left: 17.14%;
-      margin-right: 4.14%;
-    }
   }
 }
