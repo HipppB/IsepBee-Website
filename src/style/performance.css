@@ -1,0 +1,21 @@
+.performance {
+  background: rgb(13, 13, 43);
+  background: linear-gradient(
+    180deg,
+    rgba(13, 13, 43, 1) 0%,
+    rgba(43, 7, 110, 1) 75%
+  );
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.performanceTitle {
+  text-align: center;
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: bold;
+}
+.performanceText {
+  text-align: center;
+  font-size: 18px;
+  line-height: 27px;
+}

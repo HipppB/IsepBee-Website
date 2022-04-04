@@ -5,16 +5,18 @@ import Title from "./components/title.js";
 import Roadmap from "./components/roadmap.js";
 import Footer from "./components/footer.js";
 import NewsLetter from "./components/newsletter.js";
+import Performance from "./components/performance.js";
 
 function App() {
   return (
     <div className="App">
       <HeaderTest />
-      <Title/>
-      <Roadmap/>
-      <NewsLetter/>
+      <Title />
+      <Roadmap />
+      <Performance />
+      <NewsLetter />
       <Footer />
-      <br/>
+      <br />
     </div>
   );
 }
