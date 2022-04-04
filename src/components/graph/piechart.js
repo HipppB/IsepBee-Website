@@ -16,7 +16,7 @@ const piechart = () => {
       />
       <VictoryLegend
         x={350}
-        y={-50}
+        y={-15}
         title="Legend"
         centerTitle
         orientation="vertical"
