@@ -43,16 +43,16 @@
 }
 
 .statsetText {
-  text-align: justify;
+  /* text-align: justify; */
   font-size: 16px;
   line-height: 28px;
-  margin-left: 900px;
-  margin-top: 300px;
+  /* margin-left: 900px; */
+  /* margin-top: 300px; */
 }
 .statsTitle {
   text-align: justify;
   font-size: 32px;
   line-height: 48px;
   font-weight: bold;
-  margin-left: 900px;
+  /* margin-left: 900px; */
 }

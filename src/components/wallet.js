@@ -11,12 +11,19 @@ const wallet = () => {
         <Estimation />
         <Piechart />
       </div>
-      <div style={{ display: "flex", flexDirection: "row" }}>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          background: "white",
+          justifyContent: "space-around",
+          paddingInline: "20%",
+        }}
+      >
+        <Graphique />
         <Statistique />
       </div>
-      <div style={{ display: "flex", flexDirection: "row" }}>
-        <Graphique />
-      </div>
+      <div style={{ display: "flex", flexDirection: "row" }}></div>
     </div>
   );
 };
