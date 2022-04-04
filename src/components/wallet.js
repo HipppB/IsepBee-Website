@@ -4,7 +4,7 @@ import "../style/wallet.css";
 const wallet = () => {
   return (
     <div className="walletcontainer">
-      <p className="walletTitle">Our Wallet</p>
+      <p className="walletBig">Our Wallet</p>
       <div className="wallet">
         <Estimation />
         <Piechart />
