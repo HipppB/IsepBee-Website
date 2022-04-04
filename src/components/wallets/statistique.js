@@ -9,12 +9,11 @@ const statistique = () => {
         alignItems: "center",
         flexDirection: "column",
         justifyContent: "center",
+        color: "black",
       }}
     >
-      <p className="statsTitle" style={{ backgroundColor: "red" }}>
-        Detailed Statistics
-      </p>
-      <p className="statsetText" style={{ backgroundColor: "yellow" }}>
+      <p className="statsTitle">Detailed Statistics</p>
+      <p className="statsetText">
         That’s our wallet. Nothing more, nothing less. <br /> It is an
         estimation because we may invest in DEFI, <br /> in this case it is just
         an estimation.

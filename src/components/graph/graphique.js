@@ -1,12 +1,28 @@
 import React from "react";
-import { VictoryChart, VictoryLine } from "victory";
+import {
+  VictoryChart,
+  VictoryLine,
+  VictoryClipContainer,
+  stroke,
+  strockWidth,
+  strokeLinecap,
+  parent,
+} from "victory";
 
 const graphique = () => {
   return (
     <div className="pie2">
       <VictoryChart>
         <VictoryLine
-          colorScale={["red", "green", "cyan"]}
+          groupComponent={<VictoryClipContainer />}
+          style={{
+            data: {
+              stroke: "#c43a31",
+              strokeWidth: 15,
+              strokeLinecap: "round",
+              parent: { border: "2px solid #ccc" },
+            },
+          }}
           data={[
             { x: 1, y: 2 },
             { x: 2, y: 3 },
