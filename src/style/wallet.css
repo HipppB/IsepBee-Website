@@ -1,0 +1,21 @@
+.pie {
+  height: 400px;
+  margin-left: 56%;
+}
+.wallet {
+  background: #2b076e;
+}
+
+.walletTitle {
+  text-align: justify;
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: bold;
+  padding-left: 200px;
+}
+.walletText {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 27px;
+  padding-left: 200px;
+}
