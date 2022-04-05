@@ -10,7 +10,7 @@ import {
 
 const graphique = () => {
   return (
-    <div className="pie2">
+    <div className="pie2" style={{ backgroundColor: "yellow" }}>
       <VictoryChart>
         <VictoryLine
           groupComponent={<VictoryClipContainer />}
