@@ -8,6 +8,7 @@ import {
   strokeLinecap,
   parent,
   Border,
+  VictoryAxis,
 } from "victory";
 
 const graphique = () => {
@@ -31,6 +32,14 @@ const graphique = () => {
             { x: 4, y: 4 },
             { x: 5, y: 6 },
           ]}
+          interpolation="natural"
+        />
+        <VictoryAxis
+          style={{
+            axis: { stroke: "white", strokeWidth: 10 },
+            ticks: { stroke: "white" },
+            tickLabels: { fill: "white" },
+          }}
         />
       </VictoryChart>
     </div>

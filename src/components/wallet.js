@@ -15,7 +15,6 @@ const wallet = () => {
         style={{
           display: "flex",
           flexDirection: "row",
-          background: "white",
           justifyContent: "space-around",
           paddingInline: "20%",
         }}

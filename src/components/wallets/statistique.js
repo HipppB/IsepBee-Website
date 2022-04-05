@@ -4,7 +4,6 @@ const statistique = () => {
   return (
     <div
       style={{
-        backgroundColor: "green",
         display: "flex",
         alignItems: "center",
         flexDirection: "column",
