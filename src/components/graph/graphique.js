@@ -3,12 +3,9 @@ import {
   VictoryChart,
   VictoryLine,
   VictoryClipContainer,
-  stroke,
-  strockWidth,
-  strokeLinecap,
-  parent,
-  Border,
   VictoryAxis,
+  VictoryScatter,
+  VictoryLabel,
 } from "victory";
 
 const graphique = () => {
@@ -31,8 +28,24 @@ const graphique = () => {
             { x: 3, y: 5 },
             { x: 4, y: 4 },
             { x: 5, y: 6 },
+            { x: 7, y: 9 },
+            { x: 10, y: 10 },
           ]}
           interpolation="natural"
+        />
+        <VictoryScatter
+          domain={[0, 10]}
+          data={[{ x: 10, y: 10 }]}
+          labels={() => ["This is a", "multi-line", "label"]}
+          style={{ labels: { padding: 0 } }}
+          labelComponent={
+            <VictoryLabel
+              dx={10}
+              textAnchor="start"
+              verticalAnchor="middle"
+              style={[{ fill: "black", fontSize: 20 }]}
+            />
+          }
         />
         <VictoryAxis
           style={{
