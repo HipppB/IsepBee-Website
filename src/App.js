@@ -7,9 +7,10 @@ import Footer from "./components/footer.js";
 import NewsLetter from "./components/newsletter.js";
 import Performance from "./components/performance.js";
 import Wallet from "./components/wallet.js";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
-  return (
+  return (  
     <div className="App">
       <HeaderTest />
       <Title />
