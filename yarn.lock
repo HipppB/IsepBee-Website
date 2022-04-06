@@ -8198,6 +8198,11 @@
     "git-source" "^1.1.0"
     "package-json" "^2.3.1"
 
+"packages.json@^1.0.2":
+  "integrity" "sha512-MGtRs1SHtMGYGveOCNTPmMwNYCGeGnurGg2gB2UAumqyTAlMLUgOl+7BK7zj6mLUoeH7jAeGa9hqbQG5UgBkhA=="
+  "resolved" "https://registry.npmjs.org/packages.json/-/packages.json-1.0.2.tgz"
+  "version" "1.0.2"
+
 "pako@~1.0.5":
   "integrity" "sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw=="
   "resolved" "https://registry.npmjs.org/pako/-/pako-1.0.11.tgz"
