@@ -26,9 +26,9 @@ const piechart = () => {
           orientatin="vertical"
           rowGutter={25}
           colorScale={["tomato", "orange", "gold", "blue"]}
-          style={{ title: { fontSize: 20 } }}
+          style={{ title: { fontSize: 20 }, labels: {fontSize: 15, fill: "white"} }}
           data={[
-            { name: "BTC" },
+            { name: "BTC"   },
             { name: "BNB" },
             { name: "Dogecoin" },
             { name: "ETH" },
