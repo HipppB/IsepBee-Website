@@ -37,8 +37,7 @@ const graphique = () => {
           domain={[0, 12]}
           data={[{ x: 10, y: 10 }]}
           style={{}}
-          labels={({ datum }) => datum.y}
-          // labels={() => ["This is a", "multi-line", "label"]}
+          labels={() => ["This is a", "multi-line", "label"]}
           scale={{x: "linear", y: "log"}}
           labelComponent={
             <VictoryLabel
