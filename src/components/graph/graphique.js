@@ -36,7 +36,7 @@ const graphique = () => {
         <VictoryScatter
           domain={[0, 12]}
           data={[{ x: 10, y: 10 }]}
-          style={{ labels: {fill: "white" }}}
+          style={{}}
           labels={({ datum }) => datum.y}
           // labels={() => ["This is a", "multi-line", "label"]}
           scale={{x: "linear", y: "log"}}
@@ -45,7 +45,7 @@ const graphique = () => {
               dx={10}
               textAnchor="start"
               verticalAnchor="middle"
-              style={[{ fill: "black", fontSize: 20 }]}
+              style={[{ fill: "white", fontSize: 20 }]}
             />
           }
         />
