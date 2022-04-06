@@ -10,7 +10,7 @@ import {
 
 const graphique = () => {
   return (
-    <div className="pie2" style={{ backgroundColor: "yellow" }}>
+    <div className="pie2" style={{ backgroundColor: "", marginLeft: "100px" }} >
       <VictoryChart>
         <VictoryLine
           groupComponent={<VictoryClipContainer />}
@@ -34,10 +34,12 @@ const graphique = () => {
           interpolation="natural"
         />
         <VictoryScatter
-          domain={[0, 10]}
+          domain={[0, 12]}
           data={[{ x: 10, y: 10 }]}
-          labels={() => ["This is a", "multi-line", "label"]}
-          style={{ labels: { padding: 0 } }}
+          style={{ labels: {fill: "white" }}}
+          labels={({ datum }) => datum.y}
+          // labels={() => ["This is a", "multi-line", "label"]}
+          scale={{x: "linear", y: "log"}}
           labelComponent={
             <VictoryLabel
               dx={10}

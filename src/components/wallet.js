@@ -14,15 +14,12 @@ const wallet = () => {
       <div
         style={{
           display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-around",
-          paddingInline: "20%",
+          // flexDirection: "row",
         }}
       >
         <Graphique />
         <Statistique />
       </div>
-      <div style={{ display: "flex", flexDirection: "row" }}></div>
     </div>
   );
 };
