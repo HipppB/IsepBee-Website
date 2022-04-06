@@ -2,7 +2,7 @@ import "../style/roadmap.css";
 
 function roadmap() {
   return (
-    <div className="main-container">
+    <div className="main-container" id="roadmap">
       <br />
       <br />
       <section className="timeline">

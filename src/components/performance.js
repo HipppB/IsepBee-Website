@@ -2,7 +2,7 @@ import "../style/performance.css";
 
 const performance = () => {
   return (
-    <div className="performance">
+    <div className="performance" id="performances">
       <p className="performanceTitle">Our performances</p>
       <p className="performanceText">
         Our past performances don’t reflect our future performances. <br />

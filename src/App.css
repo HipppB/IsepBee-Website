@@ -1,7 +1,11 @@
 .App {
   margin: 0;
-  background-color: #0D0D2B;
+  background-color: #0d0d2b;
   padding-top: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .App-logo {
