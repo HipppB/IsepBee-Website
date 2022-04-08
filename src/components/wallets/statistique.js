@@ -4,11 +4,12 @@ const statistique = () => {
   return (
     <div
       style={{
-        // display: "flex",
+        display: "flex",
         alignItems: "center",
-        // justifyContent: "center",
+        flexDirection: "column",
+        justifyContent: "center",
         background: "",
-        marginLeft: "800px",
+        marginLeft: "20vw",
         marginTop: "50px",
       }}
     >
