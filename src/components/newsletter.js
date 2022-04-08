@@ -6,10 +6,13 @@ import "../style/newsletter.css";
 
 let props = {
   text: "Confirm",
-  color: "white",
-  w: "10vw",
-  h: "5vw",
+  backgroundColor: "white",
+  w: "7vw",
+  h: "3vw",
+  fontSize: "18px",
   radius: "32px",
+  color: "#0D0D2B",
+  fontWeight: "bold",
 };
 
 function Newletter() {

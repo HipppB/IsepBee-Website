@@ -12,6 +12,7 @@ function Button(props) {
           fontSize: props.fontSize,
           color: props.color,
           marginLeft: props.marginLeft,
+          fontWeight: props.fontWeight,
         }}
       >
         {props.text}
