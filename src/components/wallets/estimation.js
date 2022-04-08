@@ -1,4 +1,16 @@
 import React from "react";
+import Button from "../button/button.js";
+
+let props = {
+  text: "See more",
+  backgroundColor: "#3671E9",
+  w: "10vw",
+  h: "5vw",
+  radius: "32px",
+  fontSize: "18px",
+  color: "white",
+  marginLeft: "200px",
+};
 
 const estimation = () => {
   return (
@@ -9,6 +21,9 @@ const estimation = () => {
         estimation because we may invest in DEFI, <br /> in this case it is just
         an estimation.
       </p>
+      <div>
+        <Button {...props} />
+      </div>
     </div>
   );
 };
