@@ -4,6 +4,7 @@ import Statistique from "./wallets/statistique.js";
 import Graphique from "./graph/graphique.js";
 import Token from "./wallets/token.js";
 import Ibepcoin from "./wallets/ibepcoin.js";
+
 import "../style/wallet.css";
 const wallet = () => {
   return (
@@ -11,6 +12,7 @@ const wallet = () => {
       <p className="walletBig">Our Wallet</p>
       <div className="wallet">
         <Estimation />
+
         <Piechart />
       </div>
       <div

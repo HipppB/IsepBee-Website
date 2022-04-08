@@ -28,7 +28,7 @@ const ChartComponent = (props) => {
     };
   }, [props.data]);
 
-  return <div ref={chartContainerRef} />;
+  return <div ref={chartContainerRef} className="chartJS" />;
 };
 
 export default ChartComponent;
