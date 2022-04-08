@@ -61,7 +61,25 @@
   padding-left: 25%;
   padding-right: 25%;
 }
+.ibepback {
+  background-color: #35068c;
+  margin-right: 10em;
+  margin-left: 10em;
+  border-radius: 16%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  flex-direction: row;
+  display: flex;
+}
+.ibepcoin {
+  height: 300px;
+  width: 100px;
+  font-size: 24px;
+  font: bold;
+  color: white;
+}
 
-.seemore {
-  font-size: 38px;
+.logo_image2 {
+  border: 1px solid white;
+  border-radius: 90px;
 }
