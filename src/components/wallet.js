@@ -17,7 +17,7 @@ const wallet = () => {
       </div>
       <div
         style={{
-          display: "flex",
+          // display: "flex",
           // flexDirection: "row",
           marginTop: "175px",
         }}
@@ -28,7 +28,7 @@ const wallet = () => {
       <div className="wallet">
         <div
           style={{
-            display: "flex",
+            // display: "flex",
             // flexDirection: "row",
             marginTop: "175px",
           }}

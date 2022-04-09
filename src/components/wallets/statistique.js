@@ -4,8 +4,8 @@ import Button from "../button/button.js";
 let props = {
   text: "See more",
   backgroundColor: "#3671E9",
-  w: "7vw",
-  h: "3vw",
+  w: "150px",
+  h: "60px",
   radius: "32px",
   fontSize: "18px",
   color: "white",
