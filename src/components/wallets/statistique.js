@@ -20,7 +20,7 @@ const statistique = () => {
         flexDirection: "column",
         justifyContent: "center",
         background: "",
-        marginLeft: "30vw",
+        marginLeft: "20vw",
         marginTop: "50px",
       }}
     >
