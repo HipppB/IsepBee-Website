@@ -27,6 +27,7 @@
 .wallet {
   display: flex;
   align-items: center;
+  flex-direction: row;
 }
 
 .walletTitle {
@@ -63,23 +64,28 @@
 }
 .ibepback {
   background-color: #35068c;
-  margin-right: 10em;
-  margin-left: 10em;
+  /* margin-right: 1em; */
+  margin-left: 40em;
   border-radius: 16%;
-  margin-top: 0%;
-  margin-bottom: 0%;
-  flex-direction: row;
-  display: flex;
+  /* margin-top: 0%;
+  margin-bottom: 0%; */
 }
 .ibepcoin {
   height: 300px;
-  width: 100px;
+  width: 600px;
   font-size: 24px;
   font: bold;
   color: white;
+  display: inline-flex;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 5%;
 }
 
 .logo_image2 {
   border: 1px solid white;
   border-radius: 90px;
+  margin-top: -1%;
+  margin-right: 1em;
+  margin-left: 2em ;
 }
