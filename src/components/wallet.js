@@ -10,12 +10,13 @@ const wallet = () => {
   return (
     <div className="walletcontainer">
       <p className="walletBig">Our Wallet</p>
-      <div className="wallet">
+      <div className="wallet1">
         <Estimation />
 
         <Piechart />
       </div>
       <div
+        className="wallet2"
         style={{
           // display: "flex",
           // flexDirection: "row",
@@ -25,7 +26,7 @@ const wallet = () => {
         <Graphique />
         <Statistique />
       </div>
-      <div className="wallet">
+      <div className="wallet3">
         <div
           style={{
             // display: "flex",

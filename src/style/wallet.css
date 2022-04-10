@@ -24,7 +24,15 @@
   margin-top: 0;
 }
 
-.wallet {
+.wallet1 {
+  display: flex;
+  flex-direction: row;
+}
+.wallet2 {
+  display: flex;
+  flex-direction: row;
+}
+.wallet3 {
   display: flex;
   flex-direction: row;
 }
@@ -95,7 +103,13 @@
 }
 
 @media screen and (max-width: 728px) {
-  .wallet {
+  .wallet1 {
+    flex-direction: column;
+  }
+  .wallet2 {
+    flex-direction: column;
+  }
+  .wallet3 {
     flex-direction: column;
   }
   .pie {
