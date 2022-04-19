@@ -5,7 +5,15 @@ import "../../style/wallet.css";
 
 const piechart = () => {
   return (
-    <div className="pie" style={{ display: "flex", flexDirection: "row" }}>
+    <div
+      className="pie"
+      style={{
+        display: "flex",
+        flexDirection: "row",
+        width: 400,
+        backgroundColor: "green",
+      }}
+    >
       <div>
         <VictoryPie
           colorScale={["tomato", "orange", "gold", "blue"]}

@@ -14,7 +14,7 @@ let props = {
 
 const estimation = () => {
   return (
-    <div>
+    <div style={{ backgroundColor: "yellow" }}>
       <p className="walletTitle">Wallet Estimation</p>
       <p className="walletText">
         That’s our wallet. Nothing more, nothing less. <br /> It is an
