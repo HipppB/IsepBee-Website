@@ -71,14 +71,11 @@
 }
 .ibepback {
   background-color: #35068c;
-  /* margin-right: 1em; */
-  margin-left: 40em;
+  margin-left: 60em;
   border-radius: 16px;
-  /* margin-top: 0%;
-  //margin-bottom: 0%; */
   display: flex;
   margin-right: 10vw;
-  margin-top: -20px;
+  /* margin-top: -20px; */
   height: 300px;
   width: 500px;
 }
@@ -89,8 +86,8 @@
   display: inline-flex;
   justify-content: center;
   justify-items: center;
-  padding-left: 25vw;
-  padding-right: 25vw;
+  padding-left: 6vw;
+  /* padding-right: 25vw; */
   padding-top: 5%;
 }
 
