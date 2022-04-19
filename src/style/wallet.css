@@ -43,6 +43,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: space-evenly;
 }
 
@@ -78,11 +79,7 @@
 }
 .ibepback {
   background-color: #35068c;
-  margin-left: 60em;
   border-radius: 16px;
-  display: flex;
-  margin-right: 10vw;
-  /* margin-top: -20px; */
   height: 300px;
   width: 500px;
 }
