@@ -1,5 +1,8 @@
 import React from "react";
 import logo from "../../assets/isepToken.png";
+import Tokenvalue from "./ibepcoincomp/tokenvalue";
+import Totalsupply from "./ibepcoincomp/totalsupply";
+import Walletvalue from "./ibepcoincomp/walletvalue";
 
 const ibepcoin = () => {
   return (
@@ -14,6 +17,11 @@ const ibepcoin = () => {
         />
         IbepCoin
       </h1>
+      <div className="sousibep">
+        <Tokenvalue />
+        <Totalsupply />
+        <Walletvalue />
+      </div>
     </div>
   );
 };
