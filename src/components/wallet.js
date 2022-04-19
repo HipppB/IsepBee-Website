@@ -4,6 +4,7 @@ import Statistique from "./wallets/statistique.js";
 import Graphique from "./graph/graphique.js";
 import Token from "./wallets/token.js";
 import Ibepcoin from "./wallets/ibepcoin.js";
+import Pierechart from "./graph/pierecharts.js";
 
 import "../style/wallet.css";
 const wallet = () => {
@@ -13,7 +14,7 @@ const wallet = () => {
       <div className="wallet1">
         <Estimation />
 
-        <Piechart />
+        <Pierechart />
       </div>
       <div
         className="wallet2"

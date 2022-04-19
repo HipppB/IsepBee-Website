@@ -10,7 +10,7 @@ const piechart = () => {
       style={{
         display: "flex",
         flexDirection: "row",
-        width: 400,
+        width: 700,
         backgroundColor: "green",
       }}
     >

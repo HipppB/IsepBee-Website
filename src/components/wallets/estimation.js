@@ -9,7 +9,8 @@ let props = {
   radius: "32px",
   fontSize: "18px",
   color: "white",
-  marginLeft: "200px",
+  marginLeft: "25%",
+  
 };
 
 const estimation = () => {
