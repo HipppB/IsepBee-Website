@@ -19,9 +19,6 @@ const statistique = () => {
         alignItems: "center",
         flexDirection: "column",
         justifyContent: "center",
-        background: "",
-        marginLeft: "20vw",
-        marginTop: "50px",
       }}
     >
       <p className="statsTitle">Detailed Statistics</p>

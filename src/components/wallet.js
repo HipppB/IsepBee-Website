@@ -5,6 +5,7 @@ import Graphique from "./graph/graphique.js";
 import Token from "./wallets/token.js";
 import Ibepcoin from "./wallets/ibepcoin.js";
 import Pierechart from "./graph/pierecharts.js";
+import Regraphique from "./graph/regraphique.js";
 
 import "../style/wallet.css";
 const wallet = () => {
@@ -22,7 +23,7 @@ const wallet = () => {
           marginTop: "175px",
         }}
       >
-        <Graphique />
+        <Regraphique />
         <Statistique />
       </div>
       <div 
