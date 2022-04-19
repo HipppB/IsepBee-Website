@@ -19,7 +19,9 @@ const ibepcoin = () => {
       </h1>
       <div className="sousibep">
         <Tokenvalue />
+        <p>/</p>
         <Totalsupply />
+        <p>=</p>
         <Walletvalue />
       </div>
     </div>
