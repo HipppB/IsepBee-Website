@@ -10,7 +10,7 @@ const Pierecharts = () => {
   ];
   return (
     <PieChart width={700} height={700}>
-      <Pie data={data} dataKey="students" outerRadius={250}>
+      <Pie data={data} dataKey="students" outerRadius={250} label>
           
       </Pie>
     </PieChart>
