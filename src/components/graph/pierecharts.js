@@ -9,10 +9,10 @@ const Pierecharts = () => {
     { name: "Geek-o-mania", students: 1000, fill:"white" },
   ];
   return (
-    <PieChart width={700} height={700}>
-      <Pie data={data} dataKey="students" outerRadius={250} label>
+    <PieChart width={400} height={400}>
+      <Pie data={data} dataKey="students" outerRadius={150} label width={300} height={300}>
           
-      </Pie>
+      </Pie>    
     </PieChart>
   );
 };

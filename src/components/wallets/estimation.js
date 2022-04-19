@@ -10,12 +10,11 @@ let props = {
   fontSize: "18px",
   color: "white",
   marginLeft: "25%",
-  
 };
 
 const estimation = () => {
   return (
-    <div style={{ backgroundColor: "yellow" }}>
+    <div>
       <p className="walletTitle">Wallet Estimation</p>
       <p className="walletText">
         That’s our wallet. Nothing more, nothing less. <br /> It is an
