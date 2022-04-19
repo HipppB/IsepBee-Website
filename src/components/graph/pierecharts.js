@@ -8,9 +8,6 @@ const Pierecharts = () => {
     { name: "Geek-i-knack", students: 200, fill:"red"},
     { name: "Geek-o-mania", students: 1000, fill:"white" },
   ];
-
-const colors = ["red", "white", "black", "yellow"];
-
   return (
     <PieChart width={700} height={700}>
       <Pie data={data} dataKey="students" outerRadius={250}>
