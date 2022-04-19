@@ -28,14 +28,19 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .wallet2 {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .wallet3 {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .walletTitle {
@@ -110,6 +115,7 @@
   }
   .wallet3 {
     flex-direction: column;
+    background-color:bisque;
   }
   .pie {
     height: 500px;

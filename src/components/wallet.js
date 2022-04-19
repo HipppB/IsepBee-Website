@@ -18,25 +18,20 @@ const wallet = () => {
       <div
         className="wallet2"
         style={{
-          // display: "flex",
-          // flexDirection: "row",
           marginTop: "175px",
         }}
       >
         <Graphique />
         <Statistique />
       </div>
-      <div className="wallet3">
-        <div
-          style={{
-            // display: "flex",
-            // flexDirection: "row",
+      <div 
+        className="wallet3" 
+        style={{
             marginTop: "175px",
           }}
         >
           <Token />
           <Ibepcoin />
-        </div>
       </div>
     </div>
   );
