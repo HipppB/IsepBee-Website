@@ -8,7 +8,7 @@ function title() {
       <div className="textContainer">
         <TitleText />
       </div>
-      <div className="textcontainer">
+      <div className="textcontainer imageTitleContainer">
         <ImageTitle />
       </div>
     </div>

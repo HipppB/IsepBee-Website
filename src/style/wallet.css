@@ -111,7 +111,7 @@
 }
 
 .ibepcomp1 {
-  background-color: #491F98;
+  background-color: #491f98;
   padding-bottom: 125px;
   border-radius: 16%;
   width: 150px;
@@ -123,7 +123,7 @@
   color: white;
 }
 .ibepcomp2 {
-  background-color: #491F98;
+  background-color: #491f98;
   padding-bottom: 125px;
   border-radius: 16%;
   width: 150px;
@@ -135,7 +135,7 @@
   color: white;
 }
 .ibepcomp3 {
-  background-color: #491F98;
+  background-color: #491f98;
   padding-bottom: 125px;
   border-radius: 16%;
   width: 150px;
@@ -145,6 +145,15 @@
   font-size: 20px;
   font: bold;
   color: white;
+}
+
+.responsiveContainerTestUn {
+  width: 40vw;
+  height: 20vw;
+}
+.responsiveContainerTest {
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 728px) {
@@ -157,12 +166,16 @@
   }
   .wallet3 {
     flex-direction: column;
-    background-color:bisque;
+    background-color: bisque;
   }
   .pie {
     height: 500px;
     margin-left: 20%;
     display: flex;
     flex-direction: row;
+  }
+
+  .sousibep {
+    flex-direction: column;
   }
 }
