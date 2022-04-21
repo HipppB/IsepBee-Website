@@ -1,18 +1,31 @@
 import React, { PureComponent } from "react";
-import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from "recharts";
+import {
+  PieChart,
+  Pie,
+  Sector,
+  Cell,
+  ResponsiveContainer,
+  Tooltip,
+} from "recharts";
 
 const Pierecharts = () => {
   const data = [
-    { name: "Geeksforgeeks", students: 400, fill:"#8884d8"},
-    { name: "Technical scripter", students: 700, fill:"#1af624"},
-    { name: "Geek-i-knack", students: 200, fill:"red"},
-    { name: "Geek-o-mania", students: 1000, fill:"white" },
+    { name: "Bitcoin", students: 400, fill: "#8884d8" },
+    { name: "Ethereum", students: 700, fill: "#1af624" },
+    { name: "DogeCoin", students: 200, fill: "red" },
+    { name: "Solana", students: 1000, fill: "white" },
   ];
   return (
     <PieChart width={400} height={400}>
-      <Pie data={data} dataKey="students" outerRadius={150} label width={300} height={300}>
-          
-      </Pie>    
+      <Pie
+        data={data}
+        dataKey="students"
+        outerRadius={150}
+        label="true"
+        width={300}
+        height={300}
+      ></Pie>
+      <Tooltip />
     </PieChart>
   );
 };

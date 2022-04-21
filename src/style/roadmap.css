@@ -95,7 +95,7 @@ div.timeline-line:after {
   border-top: 20px solid white;
 }
 
-@media screen and (min-width: 728px) {
+@media screen and (min-width: 820px) {
   .timeline {
     display: block;
   }

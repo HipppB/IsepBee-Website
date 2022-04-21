@@ -7,6 +7,10 @@
   );
   padding-top: 50px;
   padding-bottom: 50px;
+  display: flex;
+  flex-direction: center;
+  flex-direction: column;
+  align-items: center;
 }
 .performanceTitle {
   text-align: center;
@@ -18,4 +22,25 @@
   text-align: center;
   font-size: 18px;
   line-height: 27px;
+}
+
+/*.performanceContainer {
+  height: 500px;
+}*/
+
+.chartLogo {
+  font-size: 24px;
+  font: bold;
+  color: white;
+  display: flex;
+  justify-content: left;
+  justify-items: center;
+  padding-top: 5%;
+}
+
+.responsiveContainerTestDeux {
+  height: 50vw;
+  background-color: #491f98;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
 }

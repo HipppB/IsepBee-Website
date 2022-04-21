@@ -1,59 +1,107 @@
-.newsLetterContainer{
-    background: rgb(43,7,110);
-    background: linear-gradient(180deg, rgba(43,7,110,1) 0%, rgba(13,13,43,1) 90%);
-    height: 392px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.newsLetterContainer {
+  background: rgb(43, 7, 110);
+  background: linear-gradient(
+    180deg,
+    rgba(43, 7, 110, 1) 0%,
+    rgba(13, 13, 43, 1) 90%
+  );
+  height: 392px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.NewsDivContainer{
-    border-radius: 16px; 
-    background-color: #3671E9;
-    min-height: 216px;
-    max-height: 500px;
-    display: flex;
+.NewsDivContainer {
+  border-radius: 16px;
+  background-color: #3671e9;
+  min-height: 216px;
+  max-height: 500px;
+  display: flex;
   flex-direction: row;
 
   align-items: center;
   justify-content: center;
   margin-inline: 7%;
+
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
 }
 
 .NewsComponentsContainer {
-    width: 90%;
-    min-width: 400px;
+  width: 90%;
+  min-width: 400px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.newsTextContainer {
+  display: flex;
+  flex-direction: column;
+}
+
 .newsTitle {
-    color: white;
-    font-size: 35px;
-    text-align: left;
-    font-weight: bold;
+  color: white;
+  font-size: 35px;
+  text-align: left;
+  font-weight: bold;
 }
 
 .newsText {
-    color: white;
+  color: white;
 }
 
-.inputNews{
-    border-width: 0px;
-    border-bottom: 2px solid white;
-    background: rgba(0,0,0,0);
-    outline: rgba(0,0,0,0);
-    width: 20vw;
-    font-size: 20px;
-    color: white;
+.inputNews {
+  border-width: 0px;
+  border-bottom: 2px solid white;
+  background: rgba(0, 0, 0, 0);
+  outline: rgba(0, 0, 0, 0);
+  width: 20vw;
+  font-size: 20px;
+  color: white;
 }
 
-.inputNews::placeholder{
-    color: white;
+.inputNews::placeholder {
+  color: white;
 }
 
-.buttonNews{
-    width: 10vw;
-    height: 5vw;
+.buttonNews {
+  width: 10vw;
+  height: 5vw;
+}
+
+@media screen and (max-width: 800px) {
+  .newsLetterContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .NewsDivContainer {
+    flex-direction: column;
+  }
+
+  .NewsComponentsContainer {
+    flex-direction: column;
+    height: 50vh;
+    width: 80%;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .newsTextContainer {
+    align-items: center;
+  }
+
+  .newsText {
+    text-align: center;
+    align-content: center;
+    width: 85%;
+  }
+
+  .newsTitle {
+    text-align: center;
+  }
+
+  .inputNews {
+    width: 60vw;
+  }
 }

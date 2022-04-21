@@ -10,16 +10,14 @@
 .titleContainer {
   justify-content: space-between;
   flex-basis: 100px;
-  min-width: 500px;
-  overflow-wrap: break-word;
 }
 
 .textBig {
   color: white;
   font-size: 40px;
   font-weight: bold;
-  line-height: 1em;
-  width: 40vw;
+  line-height: 2em;
+  width: 400px;
 }
 
 .textSmall {
@@ -27,8 +25,12 @@
   font-size: 17px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .imageTitleContainer {
     display: none;
+  }
+
+  .textBig {
+    width: 90%;
   }
 }

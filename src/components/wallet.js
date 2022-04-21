@@ -18,20 +18,20 @@ const wallet = () => {
       <div
         className="wallet2"
         style={{
-          marginTop: "175px",
+          marginTop: "10%",
         }}
       >
         <Regraphique />
         <Statistique />
       </div>
-      <div 
-        className="wallet3" 
+      <div
+        className="wallet3"
         style={{
-            marginTop: "175px",
-          }}
-        >
-          <Token />
-          <Ibepcoin />
+          marginTop: "10%",
+        }}
+      >
+        <Token />
+        <Ibepcoin />
       </div>
     </div>
   );

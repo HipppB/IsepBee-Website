@@ -1,20 +1,25 @@
 function titleText() {
-    return (
-        <div className="titleText">
-            <div className="textBig">
-                <p>IsepBee</p>
-                <p>A crypto project</p>
-                <p>of IsepInvest</p>
-                <p>and Garage</p>
-            </div>
+  return (
+    <div className="titleText">
+      <div className="textBig">
+        <p>
+          IsepBee
+          <br />
+          A crypto project
+          <br />
+          of IsepInvest
+          <br />
+          and Garage
+        </p>
+      </div>
 
-            <br/>
+      <br />
 
-            <div className="textSmall">
-                <p>A solution to make money with peace of mind</p>
-            </div>
-        </div>
-    );
+      <div className="textSmall">
+        <p>A solution to make money with peace of mind</p>
+      </div>
+    </div>
+  );
 }
 
 export default titleText;

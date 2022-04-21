@@ -1,15 +1,14 @@
-import React from 'react';
+import React from "react";
 const token = () => {
-    return (
-        <div>
-            <p className="walletTitle">Token value</p>
-            <p className="walletText">
-        That’s our wallet. Nothing more, nothing less. <br /> It is an
-        estimation because we may invest in DEFI, <br /> in this case it is just
-        an estimation.
+  return (
+    <div>
+      <p className="walletTitle">Token value</p>
+      <p className="walletText">
+        That’s our wallet value. <br /> It is based on the total value and the
+        total supply.
       </p>
-        </div>
-    );
+    </div>
+  );
 };
 
 export default token;

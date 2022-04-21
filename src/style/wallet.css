@@ -72,25 +72,24 @@
 }
 
 .chartJS {
-  width: 3vw;
-  height: auto;
-  padding-left: 25%;
-  padding-right: 25%;
+  width: 50vw;
+  height: 25vw;
 }
 .ibepback {
   background-color: #35068c;
   border-radius: 16px;
   height: 300px;
   width: 500px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
 }
 .ibepcoin {
   font-size: 24px;
   font: bold;
   color: white;
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   justify-items: center;
-  padding-left: 6vw;
+  /*padding-left: 6vw;*/
   /* padding-right: 25vw; */
   padding-top: 5%;
 }
@@ -148,8 +147,8 @@
 }
 
 .responsiveContainerTestUn {
-  width: 40vw;
-  height: 20vw;
+  width: 50vw;
+  height: 25vw;
 }
 .responsiveContainerTest {
   width: 100%;
@@ -157,16 +156,12 @@
 }
 
 @media screen and (max-width: 728px) {
-  .wallet1 {
-    /* flex-direction: column; */
-    background-color: red;
-  }
   .wallet2 {
     flex-direction: column;
   }
   .wallet3 {
     flex-direction: column;
-    background-color: bisque;
+    /*background-color: bisque;*/
   }
   .pie {
     height: 500px;
@@ -175,7 +170,30 @@
     flex-direction: row;
   }
 
+  .ibepback {
+    background-color: #35068c;
+    border-radius: 16px;
+    height: 800px;
+    width: 500px;
+  }
+
+  .ibepcoin {
+    padding-right: 7vw;
+  }
+
   .sousibep {
     flex-direction: column;
+  }
+
+  .responsiveContainerTestUn {
+    width: 70vw;
+    height: 35vw;
+  }
+
+  .responsiveContainerTestDeux {
+    height: fit-content;
+  }
+  .chartJS {
+    width: 70vw;
   }
 }

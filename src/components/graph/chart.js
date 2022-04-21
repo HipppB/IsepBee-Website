@@ -1,34 +1,206 @@
-import { createChart } from "lightweight-charts";
 import React, { useEffect, useRef } from "react";
+import {
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  Brush,
+  AreaChart,
+  Area,
+  ResponsiveContainer,
+} from "recharts";
+import logo from "../../assets/isepToken.png";
 
-const ChartComponent = (props) => {
-  const chartContainerRef = useRef();
+const CustomTooltip = ({ active, payload, label }) => {
+  if (active && payload && payload.length) {
+    return (
+      <div className="custom-tooltip">
+        <p className="label">
+          {`Date : ${label}`}
+          <br />
+          {`Price : ${payload[0].value} $`}
+        </p>
+      </div>
+    );
+  }
 
-  useEffect(() => {
-    const handleResize = () => {
-      chart.applyOptions({ width: chartContainerRef.current.clientWidth });
-    };
-
-    const { data } = props;
-
-    const chart = createChart(chartContainerRef.current, {
-      width: chartContainerRef.current.clientWidth,
-      height: 300,
-    });
-    chart.timeScale().fitContent();
-
-    const newSeries = chart.addAreaSeries();
-    newSeries.setData(data);
-
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-
-      chart.remove();
-    };
-  }, [props.data]);
-
-  return <div ref={chartContainerRef} className="chartJS" />;
+  return null;
 };
+
+function ChartComponent() {
+  const data = [
+    {
+      name: "01 Avril",
+      uv: 4000,
+      pv: 2400,
+      amt: 2400,
+    },
+    {
+      name: "05 Avril",
+      uv: 3000,
+      pv: 1398,
+      amt: 2210,
+    },
+    {
+      name: "10 Avril",
+      uv: 2000,
+      pv: 9800,
+      amt: 2290,
+    },
+    {
+      name: "15 Avril",
+      uv: 2780,
+      pv: 3908,
+      amt: 2000,
+    },
+    {
+      name: "20 Avril",
+      uv: 1890,
+      pv: 4800,
+      amt: 2181,
+    },
+    {
+      name: "25 Avril",
+      uv: 2390,
+      pv: 3800,
+      amt: 2500,
+    },
+    {
+      name: "30 Avril",
+      uv: 3490,
+      pv: 4300,
+      amt: 2100,
+    },
+    {
+      name: "05 Mai",
+      uv: 2000,
+      pv: 1398,
+      amt: 2210,
+    },
+    {
+      name: "10 Mai",
+      uv: 2685,
+      pv: 9800,
+      amt: 2290,
+    },
+    {
+      name: "15 Mai",
+      uv: 3496,
+      pv: 3908,
+      amt: 2000,
+    },
+    {
+      name: "20 Mai",
+      uv: 1890,
+      pv: 4800,
+      amt: 2181,
+    },
+    {
+      name: "25 Mai",
+      uv: 4268,
+      pv: 3800,
+      amt: 2500,
+    },
+    {
+      name: "30 Mai",
+      uv: 3490,
+      pv: 4300,
+      amt: 2100,
+    },
+    {
+      name: "05 Juin",
+      uv: 3000,
+      pv: 1398,
+      amt: 2210,
+    },
+    {
+      name: "10 Juin",
+      uv: 1247,
+      pv: 9800,
+      amt: 2290,
+    },
+    {
+      name: "15 Juin",
+      uv: 2780,
+      pv: 3908,
+      amt: 2000,
+    },
+    {
+      name: "20 Juin",
+      uv: 1890,
+      pv: 4800,
+      amt: 2181,
+    },
+    {
+      name: "25 Juin",
+      uv: 4132,
+      pv: 3800,
+      amt: 2500,
+    },
+    {
+      name: "30 Juin",
+      uv: 3490,
+      pv: 4300,
+      amt: 2100,
+    },
+  ];
+
+  return (
+    <div className="responsiveContainerTestDeux chartJS">
+      {/* <h1 className="chartLogo">
+        <img
+          src={logo}
+          width="48"
+          height="48"
+          alt="Logo"
+          className="logo_image2"
+        />
+        IbepCoin
+      </h1> */}
+      <div className="responsiveContainerTest">
+        <ResponsiveContainer width={"100%"} height={"100%"}>
+          <AreaChart
+            width={800}
+            height={300}
+            data={data}
+            syncId="anyId"
+            margin={{
+              top: 0,
+              right: 30,
+              left: 0,
+              bottom: 0,
+            }}
+          >
+            <defs>
+              <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="5%" stopColor="#6EDCB5" stopOpacity={0.4} />
+                <stop offset="95%" stopColor="#6EDCB5" stopOpacity={0} />
+              </linearGradient>
+            </defs>
+            <CartesianGrid horizontal={false} vertical={false} />
+            <XAxis
+              dataKey="name"
+              axisLine={false}
+              tickLine={false}
+              tick={false}
+            />
+            <YAxis axisLine={false} tickLine={false} tick={false} />
+            <Tooltip content={<CustomTooltip />} />
+            <Area
+              type="monotone"
+              dataKey="uv"
+              stroke="#6EDCB5"
+              fillOpacity={1}
+              fill="url(#colorUv)"
+            />
+          </AreaChart>
+        </ResponsiveContainer>
+      </div>
+    </div>
+  );
+}
 
 export default ChartComponent;
