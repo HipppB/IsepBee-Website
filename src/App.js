@@ -1,13 +1,11 @@
-import logo from "./assets/isepToken.png";
+import HeaderTest from "./components/header/headermain.js";
 import "./App.css";
-import HeaderTest from "./components/header.js";
 import Title from "./components/title.js";
 import Roadmap from "./components/roadmap.js";
 import Footer from "./components/footer.js";
 import NewsLetter from "./components/newsletter.js";
 import Performance from "./components/performance.js";
 import Wallet from "./components/wallet.js";
-import Chart from "./components/graph/chart.js";
 import react, { useState, useEffect } from "react";
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
@@ -27,7 +25,7 @@ function App() {
   useEffect(() => console.log(width));
   return (
     <div className="App">
-      {width > 500 && <HeaderTest />}
+      <HeaderTest />
       <Title />
       <Roadmap />
       <Performance />

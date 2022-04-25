@@ -1,7 +1,7 @@
-import logo from "../assets/isepToken.png";
-import "../style/header.css";
+import logo from "../../assets/isepToken.png";
+import "../../style/header.css";
 
-function header() {
+function header1000() {
   return (
     <div className="headerContainer">
       <a href="" className="logo">
@@ -17,11 +17,11 @@ function header() {
         <a href="#about">About</a>
         <a href="#ourgoal">Our goal</a>
         <a href="#whitepaper">Whitepaper</a>
-        <a href="#roadmap">Roadmap</a>
+        {/* <a href="#roadmap">Roadmap</a> */}
         <a href="#contact">Contact</a>
       </div>
     </div>
   );
 }
 
-export default header;
+export default header1000;
