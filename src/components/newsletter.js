@@ -7,12 +7,11 @@ import "../style/newsletter.css";
 let props = {
   text: "Confirm",
   backgroundColor: "white",
-  w: "7vw",
-  h: "3vw",
-  fontSize: "18px",
+  w: "150px",
+  h: "60px",
   radius: "32px",
-  color: "#0D0D2B",
-  fontWeight: "bold",
+  fontSize: "18px",
+  color: "black",
 };
 
 function Newletter() {

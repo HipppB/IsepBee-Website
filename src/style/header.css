@@ -1,10 +1,10 @@
 .headerContainer {
   display: flex;
   flex-direction: row;
-
   align-items: center;
   justify-content: space-between;
-  margin-inline: 7%;
+  /* margin-inline: 7%;   */
+  background-color: blueviolet;
 }
 
 .linkContainer {
@@ -13,10 +13,14 @@
   display: flex;
   justify-content: space-between;
 }
-.linkContainer a {
-  text-decoration: none;
-  color: white;
 
+.linkContainer.column {
+  background-color: crimson;
+}
+.linkContainer a {
+  /* text-decoration: none; */
+  color: white;
+  background-color: darkgoldenrod;
 }
 
 .logo_image {
