@@ -17,6 +17,7 @@ function Button(props) {
       >
         {props.text}
       </button>
+      <button class="button is-primary">Button</button>
     </div>
   );
 }
