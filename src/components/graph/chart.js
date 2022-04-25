@@ -149,7 +149,10 @@ function ChartComponent() {
   ];
 
   return (
-    <div className="responsiveContainerTestDeux chartJS">
+    <div
+      className="responsiveContainerTestDeux chartJS"
+      style={{ backgroundColor: "red" }}
+    >
       {/* <h1 className="chartLogo">
         <img
           src={logo}
@@ -160,19 +163,21 @@ function ChartComponent() {
         />
         IbepCoin
       </h1> */}
-      <div className="responsiveContainerTest">
+      <div
+        className="responsiveContainerTest"
+        style={{ backgroundColor: "yellow" }}
+      >
         <ResponsiveContainer width={"100%"} height={"100%"}>
           <AreaChart
-            width={800}
-            height={300}
             data={data}
             syncId="anyId"
-            margin={{
-              top: 0,
-              right: 30,
-              left: 0,
-              bottom: 0,
-            }}
+            // margin={{
+            //   top: 0,
+            //   right: 30,
+            //   left: 0,
+            //   bottom: 0,
+            // }}
+            style={{ backgroundColor: "red", padding: 0, margin: 0 }}
           >
             <defs>
               <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
