@@ -1,9 +1,8 @@
 .headerContainer {
-  display: flex;
-  flex-direction: row;
+  /* display: flex; */
+  /* flex-direction: row; */
   align-items: center;
-  justify-content: space-between;
-  margin-inline: 7%;
+  width: 100%;
 }
 
 .linkContainer {
@@ -19,9 +18,9 @@
 }
 
 .logo_image {
-  margin-right: 30px;
   border: 1px solid white;
   border-radius: 90px;
+  justify-content: flex-start;
 }
 
 .dropbtn {
@@ -31,6 +30,9 @@
   font-size: 16px;
   border: none;
   cursor: pointer;
+  margin-right: 0%;
+  width: 25%;
+  border-radius: 0 0 0 5px;
 }
 
 /* Dropdown button on hover & focus */
@@ -42,13 +44,13 @@
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
-  display: inline-block;
+  display: flex;
+  margin-top: 0%;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
-  position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -61,6 +63,8 @@
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  text-align: center;
+  width: 100%;
 }
 
 /* Change color of dropdown links on hover */
@@ -71,6 +75,9 @@
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
   display: block;
+}
+
+@media screen and (max-width: 768px) {
 }
 
 @media (prefers-reduced-motion: no-preference) {

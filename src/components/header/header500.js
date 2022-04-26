@@ -1,8 +1,10 @@
 import logo from "../../assets/isepToken.png";
 import "../../style/header.css";
+
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
+
 window.onclick = function (event) {
   if (!event.target.matches(".dropbtn")) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -18,13 +20,26 @@ window.onclick = function (event) {
 function header500() {
   return (
     <div class="dropdown">
-      <button onclick="myFunction()" className="dropbtn">
+      <div className="headerContainer">
+        <a href="" className="logo">
+          <img
+            src={logo}
+            width=""
+            height="72"
+            alt="Logo"
+            className="logo_image"
+          />
+        </a>
+      </div>
+      <button onClick={myFunction} className="dropbtn">
         Dropdown
       </button>
       <div id="myDropdown" className="dropdown-content">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
+        <a href="#about">About</a>
+        <a href="#ourgoal">Our goal</a>
+        <a href="#whitepaper">Whitepaper</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
   );

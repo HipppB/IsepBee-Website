@@ -4,7 +4,7 @@ import "../../style/header.css";
 function header1000() {
   return (
     <div className="headerContainer">
-      <a href="" className="logo">
+      <a href="" className="logo" style={{ justifyContent: "center" }}>
         <img
           src={logo}
           width="75"
@@ -17,7 +17,7 @@ function header1000() {
         <a href="#about">About</a>
         <a href="#ourgoal">Our goal</a>
         <a href="#whitepaper">Whitepaper</a>
-        {/* <a href="#roadmap">Roadmap</a> */}
+        <a href="#roadmap">Roadmap</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
