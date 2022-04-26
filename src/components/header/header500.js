@@ -9,6 +9,7 @@ function Header500() {
     setOpen(!isOpen);
   }
   return (
+    <div>
     <div class="dropdown">
       <div className="headerContainer">
         <a href="" className="logo">
@@ -24,8 +25,9 @@ function Header500() {
       <button onClick={() => myFunction()} className="dropbtn">
         Dropdown
       </button>
-      {isOpen && (
-        <div>
+    </div>
+    {isOpen && (
+        <div className="dropdown-content">
           <a href="#about">About</a>
           <a href="#ourgoal">Our goal</a>
           <a href="#whitepaper">Whitepaper</a>
