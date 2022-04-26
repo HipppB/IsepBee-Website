@@ -1,7 +1,7 @@
 import logo from "../../assets/isepToken.png";
 import "../../style/header.css";
 
-function header1000() {
+function Header1000() {
   return (
     <div className="headerContainer">
       <a href="" className="logo" style={{ justifyContent: "center" }}>
@@ -24,4 +24,4 @@ function header1000() {
   );
 }
 
-export default header1000;
+export default Header1000;

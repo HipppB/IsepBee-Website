@@ -1,23 +1,13 @@
+import React, { useState, useEffect } from "react";
 import logo from "../../assets/isepToken.png";
 import "../../style/header.css";
 
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-window.onclick = function (event) {
-  if (!event.target.matches(".dropbtn")) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains("show")) {
-        openDropdown.classList.remove("show");
-      }
-    }
+function Header500() {
+  const [isOpen, setOpen] = useState(false);
+  function myFunction() {
+    console.log(isOpen);
+    setOpen(!isOpen);
   }
-};
-function header500() {
   return (
     <div class="dropdown">
       <div className="headerContainer">
@@ -31,18 +21,20 @@ function header500() {
           />
         </a>
       </div>
-      <button onClick={myFunction} className="dropbtn">
+      <button onClick={() => myFunction()} className="dropbtn">
         Dropdown
       </button>
-      <div id="myDropdown" className="dropdown-content">
-        <a href="#about">About</a>
-        <a href="#ourgoal">Our goal</a>
-        <a href="#whitepaper">Whitepaper</a>
-        <a href="#roadmap">Roadmap</a>
-        <a href="#contact">Contact</a>
-      </div>
+      {isOpen && (
+        <div>
+          <a href="#about">About</a>
+          <a href="#ourgoal">Our goal</a>
+          <a href="#whitepaper">Whitepaper</a>
+          <a href="#roadmap">Roadmap</a>
+          <a href="#contact">Contact</a>
+        </div>
+      )}
     </div>
   );
 }
 
-export default header500;
+export default Header500;
