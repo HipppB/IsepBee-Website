@@ -4,7 +4,7 @@ import Tokenvalue from "./ibepcoincomp/tokenvalue";
 import Totalsupply from "./ibepcoincomp/totalsupply";
 import Walletvalue from "./ibepcoincomp/walletvalue";
 
-const ibepcoin = () => {
+function Ibepcoin() {
   return (
     <div className="ibepback">
       <h1 className="ibepcoin">
@@ -28,4 +28,4 @@ const ibepcoin = () => {
   );
 };
 
-export default ibepcoin;
+export default Ibepcoin;

@@ -13,3 +13,35 @@ h3{
     text-align: center;
     color: white;
 }
+
+.linkContainerFooter {
+  width: 100%;
+  min-width: 350px;
+  display: flex;
+  flex-basis: 1;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.headerContainerFooter {
+  /* flex-direction: column; */
+  /* align-items: center; */
+  width: 100%;
+  /* flex-wrap: wrap; */
+}
+
+.logo_image3 { 
+border: 1px solid white;
+border-radius: 90px;
+background-color: brown;
+/* margin-right: 45%;
+margin-left: 45%; */
+flex-direction: row-reverse;
+justify-content:center;
+}
+
+.imgContainerFooter {
+    background-color: violet;
+    justify-content:center;
+    width: 100%;
+}

@@ -8,18 +8,18 @@ import "../style/footer.css";
 function Footer() {
     return (
         <div>
-            <div className="headerContainer">
-                <div className="headerContainer">
+            <div className="headerContainerFooter">
+                <div className="imgContainerFooter">
                     <img
                         src={logo}
                         width="75"
                         height="72"
                         alt="Logo"
-                        className="logo_image"
+                        className="logo_image3"
                     />
                     <p className="isepbee">IsepBee</p>
                 </div>
-                <div className="linkContainer">
+                <div className="linkContainerFooter">
                     <QuickLink />
                     <Ressources />
                     <Contact />
