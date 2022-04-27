@@ -17,7 +17,10 @@ function Footer() {
                         alt="Logo"
                         className="logo_image3"
                     />
+                    </div>
+                    <div>
                     <p className="isepbee">IsepBee</p>
+                    
                 </div>
                 <div className="linkContainerFooter">
                     <QuickLink />

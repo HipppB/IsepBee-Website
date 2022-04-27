@@ -31,17 +31,15 @@ h3{
 }
 
 .logo_image3 { 
-border: 1px solid white;
-border-radius: 90px;
-background-color: brown;
-/* margin-right: 45%;
-margin-left: 45%; */
-flex-direction: row-reverse;
-justify-content:center;
+    border: 1px solid white;
+    border-radius: 90px;
+    flex-direction: row-reverse;
+    justify-content:center;
+    align-items: center;
 }
 
 .imgContainerFooter {
-    background-color: violet;
     justify-content:center;
     width: 100%;
+    display: flex;
 }
