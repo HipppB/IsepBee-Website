@@ -1,17 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Popup from "../button/popup.js";
 
-let props = { 
-  text: "See more",
-  backgroundColor: "#3671E9",
-  w: "150px",
-  h: "60px",
-  radius: "32px",
-  fontSize: "18px",
-  color: "white",
-  marginLeft: "25%",
-};
-
 function Estimation() {
   const [isOpen, setOpen] = useState(false);
   function togglePopup() {
