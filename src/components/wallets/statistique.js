@@ -1,5 +1,5 @@
-import React from "react";
-import Button from "../button/button.js";
+import React, { useState, useEffect } from "react";
+import Popup from "../button/popup.js";
 
 let props = {
   text: "See more",
@@ -11,7 +11,11 @@ let props = {
   color: "white",
 };
 
-const statistique = () => {
+function Statistique() {
+  const [isOpen, setOpen] = useState(false);
+  function togglePopup() {
+    setOpen(!isOpen);
+    }
   return (
     <div
       style={{
@@ -28,10 +32,22 @@ const statistique = () => {
         an estimation.
       </p>
       <div>
-        <Button {...props} />
+        <input
+        type="button"
+        value="See more"
+        style={{backgroundColor: "#3671E9", width: "150px ", height: "60px", fontSize: "18px", borderRadius: "32px", color: "white", marginLeft : "25%"}}
+        onClick={togglePopup}
+        />
+        {isOpen && <Popup
+        content={<><b>Design your Popup</b>
+          <p style={{color:"black"}}>Our past performances don’t reflect our future performances.
+          We never know how the market can go, investing may leads to loss of money</p>
+          </>}
+            handleClose={togglePopup}
+          />}
       </div>
     </div>
   );
 };
 
-export default statistique;
+export default Statistique;

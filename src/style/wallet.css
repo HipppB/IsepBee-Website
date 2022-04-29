@@ -99,7 +99,7 @@
   padding: 20px;
   border: 1px solid #999;
   overflow: auto;
-  opacity: 1;
+  opacity: 1; 
 }
  
 .close-icon {
