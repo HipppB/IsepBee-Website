@@ -32,7 +32,15 @@ function Estimation() {
         <input
         type="button"
         value="See more"
-        style={{backgroundColor: "#3671E9", width: "150px ", height: "60px", fontSize: "18px", borderRadius: "32px", color: "white", marginLeft : "25%"}}
+        style={{
+          backgroundColor: "#3671E9", 
+          width: "150px ", 
+          height: "60px", 
+          fontSize: "18px", 
+          borderRadius: "32px", 
+          color: "white", 
+          marginLeft : "25%"
+        }}
         onClick={togglePopup}
         />
         {isOpen && <Popup
