@@ -24,6 +24,8 @@
   border: 1px solid white;
   border-radius: 90px;
   /* justify-content: flex-start; */
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .dropbtn {
