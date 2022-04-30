@@ -1,6 +1,7 @@
+
 .headerContainer {
   display: flex;
-  flex-direction: row;
+  justify-content: flex-end;
   align-items: center;
   width: 100%;
 }
@@ -11,6 +12,8 @@
   display: flex;
   flex-basis: 1;
   justify-content: space-between;
+  padding-left: 50%;
+  padding-right: 2.5%;
 }
 .linkContainer a {
   text-decoration: none;
@@ -76,6 +79,11 @@
   display: block;
 }
 
+@media screen and (max-width: 728px) {
+  .headerContainer {
+    padding-left: 100%;
+  }
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .logo_image {
