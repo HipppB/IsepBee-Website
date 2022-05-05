@@ -19,9 +19,8 @@ function Footer() {
                     />
                     </div>
                     <div>
-                    <p className="isepbee">IsepBee</p>
-                    
-                </div>
+                        <p className="isepbee">IsepBee</p>
+                    </div>
                 <div className="linkContainerFooter">
                     <QuickLink />
                     <Ressources />

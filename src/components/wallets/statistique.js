@@ -31,8 +31,7 @@ function Statistique() {
             height: "60px", 
             fontSize: "18px", 
             borderRadius: "32px", 
-            color: "white", 
-            marginLeft : "25%"
+            color: "white"
           }}
           onClick={togglePopup}
         />

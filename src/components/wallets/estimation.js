@@ -8,7 +8,14 @@ function Estimation() {
     }
   
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        flexDirection: "column",
+        justifyContent: "center",
+      }}
+    >
       <div>
       <p className="walletTitle">Wallet Estimation</p>
       <p className="walletText">
@@ -27,8 +34,7 @@ function Estimation() {
           height: "60px", 
           fontSize: "18px", 
           borderRadius: "32px", 
-          color: "white", 
-          marginLeft : "25%"
+          color: "white"
         }}
         onClick={togglePopup}
         />

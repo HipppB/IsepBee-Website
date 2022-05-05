@@ -258,12 +258,15 @@
 }
 
 @media screen and (max-width: 728px) {
-  .wallet2 {
+  .walletStatistique {
     flex-direction: column;
   }
-  .wallet3 {
+  .walletStatistique {
     flex-direction: column;
     /*background-color: bisque;*/
+  }
+  .walletTitle {
+    text-align: center;
   }
   .pie {
     height: 500px;
