@@ -1,7 +1,7 @@
 import "../style/performance.css";
 import Chart from "./graph/chart.js";
 
-const performance = () => {
+const Performance = () => {
   return (
     <div className="performance" id="performances">
       <p className="performanceTitle">Our performances</p>
@@ -17,4 +17,4 @@ const performance = () => {
   );
 };
 
-export default performance;
+export default Performance;

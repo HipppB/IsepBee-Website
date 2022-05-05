@@ -1,6 +1,6 @@
-function titleText() {
+function TitleText() {
   return (
-    <div className="titleText">
+    <div>
       <div className="textBig">
         <p>
           IsepBee
@@ -22,4 +22,4 @@ function titleText() {
   );
 }
 
-export default titleText;
+export default TitleText;

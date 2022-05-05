@@ -2,7 +2,7 @@ import ImageTitle from "./title/imageTitle.js";
 import TitleText from "./title/titleText.js";
 import "../style/title.css";
 
-function title() {
+function Title() {
   return (
     <div className="title" id="title">
       <div className="textContainer">
@@ -15,4 +15,4 @@ function title() {
   );
 }
 
-export default title;
+export default Title;

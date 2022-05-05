@@ -17,14 +17,14 @@
   background: #2b076e;
 }
 
-.walletBig {
+.walletPrincipalTitle {
   text-align: center;
   font-size: 32px;
   font-weight: bold;
   margin-top: 0;
 }
 
-.wallet1 {
+.walletEstimation {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -32,14 +32,14 @@
   justify-content: space-evenly;
 }
 
-.wallet2 {
+.walletStatistique {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
 }
-.wallet3 {
+.walletToken {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

@@ -6,17 +6,17 @@ import Pierechart from "./graph/pierecharts.js";
 import Regraphique from "./graph/regraphique.js";
 
 import "../style/wallet.css";
-const wallet = () => {
+const Wallet = () => {
   return (
     <div className="walletcontainer">
-      <p className="walletBig">Our Wallet</p>
-      <div className="wallet1">
+      <p className="walletPrincipalTitle">Our Wallet</p>
+      <div className="walletEstimation">
         <Estimation />
 
         <Pierechart />
       </div>
       <div
-        className="wallet2"
+        className="walletStatistique"
         style={{
           marginTop: "10%",
         }}
@@ -25,7 +25,7 @@ const wallet = () => {
         <Statistique />
       </div>
       <div
-        className="wallet3"
+        className="walletToken"
         style={{
           marginTop: "10%",
         }}
@@ -37,4 +37,4 @@ const wallet = () => {
   );
 };
 
-export default wallet;
+export default Wallet;
