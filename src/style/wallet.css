@@ -86,24 +86,29 @@
   left: 0;
   z-index: 10;
 }
- 
-.box{
+
+.box {
   position: relative;
   width: 70%;
   margin: 0 auto;
   height: auto;
   max-height: 70vh;
   margin-top: calc(100vh - 85vh - 20px);
-  background: linear-gradient(91.89deg, #FF0000 -10.21%, rgba(136, 1, 1, 0.44) 115.96%);
+  background: linear-gradient(
+    91.89deg,
+    #ff0000 -10.21%,
+    rgba(136, 1, 1, 0.44) 115.96%
+  );
   border-radius: 16px;
   padding: 20px;
   border: 1px solid #999;
   overflow: auto;
-  opacity: 1; 
+  opacity: 1;
+  background-color: white;
 }
- 
+
 .close-icon {
-  content: 'x';
+  content: "x";
   cursor: pointer;
   position: fixed;
   right: calc(15% - 30px);
@@ -117,7 +122,6 @@
   border: 1px solid #999;
   font-size: 20px;
 }
-
 
 /* The actual popup (appears on top) */
 .popup .popuptext {
@@ -151,18 +155,26 @@
 .popup .show {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s
+  animation: fadeIn 1s;
 }
 
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .ibepback {

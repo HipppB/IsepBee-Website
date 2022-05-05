@@ -3,15 +3,31 @@ import "../../style/header.css";
 
 function Header1000() {
   return (
-    <div>
-      <div className="headerContainer">
-        <a href="" className="logo" style={{ justifyContent: "center" }}>
+    <div
+      style={{
+        width: "100%",
+        display: "flex",
+        justifyContent: "center",
+        paddingTop: 10,
+      }}
+    >
+      <div
+        className="headerContainer"
+        style={{
+          maxWidth: 1000,
+          width: "90%",
+          alignItems: "center",
+          display: "flex",
+          justifyContent: "space-between",
+        }}
+      >
+        <a href="" style={{ justifyContent: "center" }}>
           <img
             src={logo}
             width="75"
-            height="72"
+            height="75"
             alt="Logo"
-           className="logo_image"
+            className="logo_image"
           />
         </a>
         <div className="linkContainer">

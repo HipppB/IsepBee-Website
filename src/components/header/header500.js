@@ -9,9 +9,14 @@ function Header500() {
     setOpen(!isOpen);
   }
   return (
-    <div>
-    <div class="dropdown">
-      <div className="headerContainer">
+    <div style={{ width: "100%", paddingTop: 10 }}>
+      <div
+        style={{
+          display: "flex",
+          width: "100%",
+          justifyContent: "space-between",
+        }}
+      >
         <a href="" className="logo">
           <img
             src={logo}
@@ -21,12 +26,12 @@ function Header500() {
             className="logo_image"
           />
         </a>
+
+        <button onClick={() => myFunction()} className="dropbtn">
+          Dropdown
+        </button>
       </div>
-      <button onClick={() => myFunction()} className="dropbtn">
-        Dropdown
-      </button>
-    </div>
-    {isOpen && (
+      {isOpen && (
         <div className="dropdown-content">
           <a href="#about">About</a>
           <a href="#ourgoal">Our goal</a>
