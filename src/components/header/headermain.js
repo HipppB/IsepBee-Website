@@ -21,7 +21,7 @@ function Headermain() {
   return (
     <div className="App">
       {width > 500 && <Header1000 />}
-      {width < 500 && <Header500 />}
+      {width <= 500 && <Header500 />}
     </div>
   );
 }
