@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 function Headertext() {
-  const [isActive, setisActive] = useState(true);
+  const [isActive, setisActive] = useState(false);
   return (
     <div>
       <nav>

@@ -32,6 +32,7 @@ nav {
   color: #414141;
   display: inline-block;
   position: relative;
+  text-align: center;
 }
 
 .navlinks-container a::after {
@@ -78,7 +79,7 @@ nav {
     margin: 0 0 0 0;
   }
   button.hamburger {
-    padding-left: 10px;
+    padding-left: 0px;
   }
   .hamburger span {
     display: block;
