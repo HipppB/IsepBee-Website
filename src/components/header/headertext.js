@@ -5,18 +5,15 @@ function Headertext() {
   return (
     <div>
       <nav>
-        <span style={{ color: "white" }}>EverChat</span>
-
         <div class="main-navlinks">
           <button
-            class="hamburger"
+            class={`hamburger ${isActive ? "open" : ""}`}
             aria-label="Toggle navigation"
-            aria-expanded="false"
+            aria-expanded={`${isActive ? "true" :"false"}`}
             id="button1"
             onClick={() => {
               setisActive(!isActive);
             }}
-            
           >
             <span></span>
             <span></span>
