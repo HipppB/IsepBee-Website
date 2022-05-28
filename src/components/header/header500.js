@@ -2,19 +2,23 @@ import React, { useState, useEffect } from "react";
 import logo from "../../assets/isepToken.png";
 import "../../style/header.css";
 
+// hamburgerToggler.classList.toggle("click", toggleNav);
+
 const hamburgerToggler = document.querySelector(".hamburger");
 const navLinksContainer = document.querySelector(".navlinks-container");
 
 const toggleNav = () => {
-  hamburgerToggler.classList.toggle("open")
+  console.log("test");
+  hamburgerToggler.classList.toggle("open");
 
-  const ariaToggle = hamburgerToggler.getAttribute("aria-expanded") === "true" ?  "false" : "true";
-  hamburgerToggler.setAttribute("aria-expanded", ariaToggle)
+  const ariaToggle =
+    hamburgerToggler.getAttribute("aria-expanded") === "true"
+      ? "false"
+      : "true";
+  hamburgerToggler.setAttribute("aria-expanded", ariaToggle);
 
-  navLinksContainer.classList.toggle("open")
-}
-// hamburgerToggler.classList.toggle("click", toggleNav);
-
+  navLinksContainer.classList.toggle("open");
+};
 
 function Header500() {
   // const [isOpen, setOpen] = useState(false);
@@ -22,6 +26,7 @@ function Header500() {
   //   console.log(isOpen);
   //   setOpen(!isOpen);
   // }
+
   return (
     <div style={{ width: "100%", paddingTop: 10 }}>
       <div
@@ -41,21 +46,26 @@ function Header500() {
           />
         </a>
 
-        <div class="main-navlinks">
-        <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <div class="navlinks-container">
-          <a href="#about">About</a>
-          <a href="#ourgoal">Our goal</a>
-          <a href="#whitepaper">Whitepaper</a>
-          <a href="#roadmap">Roadmap</a>
-          <a href="#contact">Contact</a>
+        <div className="main-navlinks">
+          <button
+            className="hamburger"
+            type="button"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div className="navlinks-container">
+            <a href="#about">About</a>
+            <a href="#ourgoal">Our goal</a>
+            <a href="#whitepaper">Whitepaper</a>
+            <a href="#roadmap">Roadmap</a>
+            <a href="#contact">Contact</a>
+          </div>
         </div>
-    </div>
-    </div>
+      </div>
     </div>
   );
 }

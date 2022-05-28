@@ -1,7 +1,7 @@
 import Header1000 from "../header/header1000.js";
 import Header500 from "../header/header500.js";
-import "../../style/header.css";
 import React, { useState, useEffect } from "react";
+import Headertext from "./headertext.js";
 
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
@@ -20,8 +20,9 @@ function Headermain() {
   });
   return (
     <div className="App">
-      {width > 500 && <Header1000 />}
-      {width <= 500 && <Header500 />}
+      {/* {width > 500 && <Header1000 />}
+      {width <= 500 && <Header500 />} */}
+      <Headertext />
     </div>
   );
 }
