@@ -32,7 +32,6 @@ nav {
   color: #414141;
   display: inline-block;
   position: relative;
-  text-align: center;
 }
 
 .navlinks-container a::after {
