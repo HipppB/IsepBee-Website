@@ -4,7 +4,6 @@ import Token from "./wallets/token.js";
 import Ibepcoin from "./wallets/ibepcoin.js";
 import Pierechart from "./graph/pierecharts.js";
 import Regraphique from "./graph/regraphique.js";
-
 import "../style/wallet.css";
 const Wallet = () => {
   return (

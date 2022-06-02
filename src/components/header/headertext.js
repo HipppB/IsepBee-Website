@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../../style/Headertext.css";
+import "../../style/header.css";
 
 function Headertext() {
   const [isActive, setisActive] = useState(false);
