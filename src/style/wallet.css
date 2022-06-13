@@ -87,6 +87,63 @@
   z-index: 10;
 }
 
+
+
+.btn2 {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #242455;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 136px;
+  padding-inline: 180px 95px;
+  transition: color 0.5s;
+  text-decoration: none;
+}
+
+.btn2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 136px;
+  width: 136px;
+  border-radius: 136px;
+  transition: width 0.5s, background-position 0.5s;
+  background: #242455
+}
+.btn2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: 136px;
+  width: 136px;
+  transition: transform 0.5s, opacity 0.5s;
+  opacity: 0;
+}
+
+.btn2:hover {
+  color: #fff;
+}
+
+.btn2:hover::before {
+  width: 100%;
+  background-position: left 71px center;
+}
+
+.btn2:hover::after {
+  opacity: 1;
+  transform: translateX(44px);
+}
+
 .box {
   position: relative;
   width: 70%;
