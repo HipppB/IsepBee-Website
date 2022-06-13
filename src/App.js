@@ -6,7 +6,8 @@ import Footer from "./components/footer.js";
 import NewsLetter from "./components/newsletter.js";
 import Performance from "./components/performance.js";
 import Wallet from "./components/wallet.js";
-import react, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
+
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
   return width;
