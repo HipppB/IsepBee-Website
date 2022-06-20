@@ -1,5 +1,3 @@
-
-
 const SVGComponent = (props) => (
   <svg
     width={"40vw"}

@@ -7,11 +7,6 @@
   margin-inline: 10%;
 }
 
-.titleContainer {
-  justify-content: space-between;
-  flex-basis: 100px;
-}
-
 .textBig {
   color: white;
   font-size: 40px;
